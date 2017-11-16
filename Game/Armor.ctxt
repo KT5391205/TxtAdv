@@ -1,13 +1,12 @@
 #BlueJ class context
-comment0.target=Armor
+comment0.params=
+comment0.target=Armor()
 comment1.params=
-comment1.target=Armor()
+comment1.target=int\ getAc()
 comment2.params=
-comment2.target=int\ getAc()
-comment3.params=
-comment3.target=java.lang.String\ getType()
-comment4.params=a
-comment4.target=void\ setAc(int)
-comment5.params=t
-comment5.target=void\ setType(java.lang.String)
-numComments=6
+comment2.target=java.lang.String\ getType()
+comment3.params=a
+comment3.target=void\ setAc(int)
+comment4.params=t
+comment4.target=void\ setType(java.lang.String)
+numComments=5

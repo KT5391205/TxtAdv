@@ -1,5 +1,4 @@
 #BlueJ class context
-comment0.target=Roller
-comment1.params=q\ n
-comment1.target=int\ roll(int,\ int)
-numComments=2
+comment0.params=q\ n
+comment0.target=int\ roll(int,\ int)
+numComments=1

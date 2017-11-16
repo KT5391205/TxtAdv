@@ -29,11 +29,6 @@ public class Weapon extends Items
         return damType;
     }
     
-    public int getHands()
-    {
-        return hands;
-    }
-    
     //Mutator Methods
     public void setDamage(int min, int max)
     {   minDamage = min;
@@ -43,10 +38,5 @@ public class Weapon extends Items
     public void setDamType(String d)
     {
         damType = d;
-    }
-    
-    public void setHands(int h)
-    {
-        hands = h;
     }
 }

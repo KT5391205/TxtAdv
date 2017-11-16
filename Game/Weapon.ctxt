@@ -1,16 +1,13 @@
 #BlueJ class context
-comment0.params=
-comment0.target=Weapon()
-comment1.params=i
-comment1.target=int\ getDamage(int)
-comment2.params=
-comment2.target=java.lang.String\ getDamType()
+comment0.target=Weapon
+comment1.params=
+comment1.target=Weapon()
+comment2.params=i
+comment2.target=int\ getDamage(int)
 comment3.params=
-comment3.target=int\ getHands()
+comment3.target=java.lang.String\ getDamType()
 comment4.params=min\ max
 comment4.target=void\ setDamage(int,\ int)
 comment5.params=d
 comment5.target=void\ setDamType(java.lang.String)
-comment6.params=h
-comment6.target=void\ setHands(int)
-numComments=7
+numComments=6

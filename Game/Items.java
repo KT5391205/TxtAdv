@@ -4,6 +4,7 @@ public abstract class Items
     protected String desc;
     protected int value;
     protected int id;
+    protected int hands;
     
     //Accessor Methods
     public String getName()
@@ -26,6 +27,11 @@ public abstract class Items
         return id;
     }
     
+    public int getHands()
+    {
+        return hands;
+    }
+    
     //Mutator Methods
     public void setName(String n)
     {
@@ -45,5 +51,10 @@ public abstract class Items
     public void setId(int i)
     {
         id = i;
-    }   
+    }
+    
+    public void setHands(int h)
+    {
+        hands = h;
+    }
 }

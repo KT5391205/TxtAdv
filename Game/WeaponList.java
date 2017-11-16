@@ -2,7 +2,8 @@ import java.util.HashMap;
 
 public class WeaponList
 {
-    HashMap<Integer, Weapon> weaponmap = new HashMap<Integer, Weapon>();
+    public HashMap<Integer, Weapon> weaponMap = new HashMap<Integer, Weapon>();
+    
     public WeaponList()
     {
         //Dagger - 1001
@@ -14,7 +15,7 @@ public class WeaponList
         Dagger.setDamage(1, 4);
         Dagger.setDamType("piercing");
         Dagger.setHands(1);
-        weaponmap.put(Dagger.id, Dagger);
+        weaponMap.put(Dagger.id, Dagger);
         
         //Mace - 1002
         Weapon Mace = new Weapon();
@@ -25,7 +26,7 @@ public class WeaponList
         Mace.setDamage(1, 6);
         Mace.setDamType("bludgeoning");
         Mace.setHands(1);
-        weaponmap.put(Mace.id, Mace);
+        weaponMap.put(Mace.id, Mace);
         
         //Longsword - 1003
         Weapon Longsword = new Weapon();
@@ -36,6 +37,22 @@ public class WeaponList
         Longsword.setDamage(1, 8);
         Longsword.setDamType("slashing");
         Longsword.setHands(1);
-        weaponmap.put(Longsword.id, Longsword);
+        weaponMap.put(Longsword.id, Longsword);
+        
+        //Stick - 1004
+        Weapon Stick = new Weapon();
+        Longsword.setName("stick");
+        Longsword.setDesc("a simple wooden stick");
+        Longsword.setValue(1);
+        Longsword.setId(1004);
+        Longsword.setDamage(1, 1);
+        Longsword.setDamType("bludgeoning");
+        Longsword.setHands(2);
+        weaponMap.put(Stick.id, Stick);
+    }
+    
+    public Weapon getWeapon(int i)
+    {
+        return weaponMap.get(i);
     }
 }

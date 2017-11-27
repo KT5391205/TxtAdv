@@ -49,6 +49,17 @@ public class WeaponList
         Longsword.setDamType("bludgeoning");
         Longsword.setHands(2);
         weaponMap.put(Stick.id, Stick);
+        
+        //Stick - 1005
+        Weapon Longersword = new Weapon();
+        Longersword.setName("longersword");
+        Longersword.setDesc("a LARGER blade meant to be used with three hands");
+        Longersword.setValue(300);
+        Longersword.setId(1005);
+        Longersword.setDamage(3, 18);
+        Longersword.setDamType("slashing");
+        Longersword.setHands(3);
+        weaponMap.put(Longersword.id, Longersword);
     }
     
     public Weapon getWeapon(int i)

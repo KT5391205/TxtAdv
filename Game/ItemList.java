@@ -1,5 +1,4 @@
 import java.util.HashMap;
-
 public class ItemList
 {
     public HashMap<Integer, Item> itemmap = new HashMap<Integer, Item>();

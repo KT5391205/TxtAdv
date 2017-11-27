@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 public abstract class Items
 {
     protected String name;

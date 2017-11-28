@@ -37,12 +37,12 @@ public class ArmorList
         
         //Buckler - 2004
         Armor Buckler = new Armor();
-        Plate.setName("buckler");
-        Plate.setDesc("a small, round shield");
-        Plate.setValue(15);
-        Plate.setId(2004);
-        Plate.setAc(1);
-        Plate.setType("shield");
+        Buckler.setName("buckler");
+        Buckler.setDesc("a small, round shield");
+        Buckler.setValue(15);
+        Buckler.setId(2004);
+        Buckler.setAc(1);
+        Buckler.setType("shield");
         armormap.put(Buckler.getId(), Buckler);
     }
 }

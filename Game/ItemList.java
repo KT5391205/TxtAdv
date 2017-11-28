@@ -9,6 +9,6 @@ public class ItemList
         Broom.setDesc("a broom");
         Broom.setValue(5);
         Broom.setId(3001);
-        itemmap.put(0, Broom);
+        itemmap.put(Broom.getId(), Broom);
     }
 }

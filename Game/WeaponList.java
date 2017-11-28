@@ -41,13 +41,13 @@ public class WeaponList
         
         //Stick - 1004
         Weapon Stick = new Weapon();
-        Longsword.setName("stick");
-        Longsword.setDesc("a simple wooden stick");
-        Longsword.setValue(1);
-        Longsword.setId(1004);
-        Longsword.setDamage(1, 1);
-        Longsword.setDamType("bludgeoning");
-        Longsword.setHands(2);
+        Stick.setName("stick");
+        Stick.setDesc("a simple wooden stick");
+        Stick.setValue(1);
+        Stick.setId(1004);
+        Stick.setDamage(1, 1);
+        Stick.setDamType("bludgeoning");
+        Stick.setHands(2);
         weaponMap.put(Stick.id, Stick);
         
         //Stick - 1005

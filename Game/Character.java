@@ -19,13 +19,25 @@ public abstract class Character
     protected int wep;
     protected int arm;
     
-    WeaponList weaponList = new WeaponList();
+    WeaponList wList = new WeaponList();
+    Roller roller = new Roller();
     
     public void attack(Character a, Character d)
     {
+        //Assailant Stats
         Character Assailant = a;
-        System.out.println(a + " attacks " + d + " with a " + weaponList.getWeapon(Assailant.getWep()));
-
+        Weapon aWeapon = wList.getWeapon(Assailant.getWep());
+        int aMinDam = aWeapon.getDamage(1);
+        int aMaxDam = aWeapon.getDamage(2);
+        
+        //Defender Stats
+        Character Defender = d;
+        Weapon dWeapon = wList.getWeapon(Defender.getWep());
+        int dMinDam = dWeapon.getDamage(1);
+        int dMaxDam = dWeapon.getDamage(2);
+        
+        System.out.println(a.getName() + " attacks " + d.getName() + " with a " + aWeapon.getName() + ".");
+        System.out.println(d.getName() + " defends with a " + dWeapon.getName() + " with " + d.getArm());
     }
     
     //Accessor Methods
@@ -38,7 +50,7 @@ public abstract class Character
     {
         return charClass;
     }
-
+    
     public int getLevel()
     {
         return level;

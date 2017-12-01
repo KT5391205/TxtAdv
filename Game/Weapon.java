@@ -4,6 +4,7 @@ public class Weapon extends Items
     private int maxDamage;
     private String damType;
     private int hands;
+    private boolean finesse;
     
     public Weapon()
     {
@@ -27,6 +28,11 @@ public class Weapon extends Items
     public String getDamType()
     {
         return damType;
+    }
+    
+    public boolean getFinesse()
+    {
+        return finesse;
     }
     
     //Mutator Methods

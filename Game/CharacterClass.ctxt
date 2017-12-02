@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=CharacterClass
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ CharacterClass\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=CharacterClass()
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment2.text=\r\n\ Name\r\n
+comment3.params=n
+comment3.target=void\ setName(java.lang.String)
+comment4.params=
+comment4.target=int\ getHd()
+comment4.text=\r\n\ Hit\ Dice\r\n
+comment5.params=h
+comment5.target=void\ setHd(int)
+comment6.params=
+comment6.target=int\ getId()
+comment6.text=\r\n\ ID\r\n
+comment7.params=i
+comment7.target=void\ setId(int)
+comment8.params=i
+comment8.target=int\ getSkills(int)
+comment8.text=\r\n\ Skills\r\n
+comment9.params=s1\ s2\ s3\ s4
+comment9.target=void\ setSkills(int,\ int,\ int,\ int)
+numComments=10

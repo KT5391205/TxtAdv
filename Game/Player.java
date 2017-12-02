@@ -4,7 +4,7 @@ public class Player extends Character
     {
     }
     
-    public Player(String n, String cc, int l, int s, int d, int f, int i, int w, int c, int wep, int arm)
+    public Player(String n, int cc, int l, int s, int d, int f, int i, int w, int c, int wep, int arm)
     {
         name = n;
         charClass = cc;

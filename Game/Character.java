@@ -1,7 +1,7 @@
 public abstract class Character
 {
     protected String name;
-    protected String charClass;
+    protected int charClass;
     protected int level;
     protected int xp;
     protected int str;
@@ -13,8 +13,10 @@ public abstract class Character
     protected int wep;
     protected int arm;
     protected int maxHp;
+    protected int currentHp;
     protected int atkStat;
 
+    ClassList cList = new ClassList();
     WeaponList wList = new WeaponList();
     Roller dice = new Roller();
 
@@ -49,6 +51,11 @@ public abstract class Character
         }
     }
     
+    public void initialize()
+    {
+        //MaxHp =
+    }
+    
     //Getters and Setters
     /**
      * Name
@@ -65,11 +72,11 @@ public abstract class Character
     /**
      * Class
      */
-    public String getCharClass()
+    public CharacterClass getCharClass()
     {
-        return charClass;
+        return cList.getCharacterClass(charClass);
     }
-    public void setCharClass(String c)
+    public void setCharClass(int c)
     {
         charClass = c;
     }
@@ -99,7 +106,7 @@ public abstract class Character
     }
 
     /**
-     * Str
+     * Strength
      */
     public int getStr()
     {
@@ -111,7 +118,7 @@ public abstract class Character
     }
 
     /**
-     * Dex
+     * Dexterity
      */
     public int getDex()
     {
@@ -123,7 +130,7 @@ public abstract class Character
     }
 
     /**
-     * Con
+     * Constitution
      */
     public int getCon()
     {
@@ -135,7 +142,7 @@ public abstract class Character
     }
 
     /**
-     * Int
+     * Intelligence
      */
     public int getIntel()
     {
@@ -147,7 +154,7 @@ public abstract class Character
     }
 
     /**
-     * Wis
+     * Wisdom
      */
     public int getWis()
     {
@@ -159,7 +166,7 @@ public abstract class Character
     }
 
     /**
-     * Cha
+     * Charisma
      */
     public int getCha()
     {
@@ -171,7 +178,7 @@ public abstract class Character
     }
     
     /**
-     * Wep
+     * Weapon
      */
     public int getWep()
     {
@@ -183,7 +190,7 @@ public abstract class Character
     }
     
     /**
-     * Arm
+     * Armor
      */
     public int getArm()
     {
@@ -195,11 +202,15 @@ public abstract class Character
     }
     
     /**
-     * MaxHp
+     * Hit Points
      */
     public int getMaxHp()
     {
         return maxHp;
+    }
+    public int getCurrentHp()
+    {
+        return currentHp;
     }
     
     public int mod(int i)

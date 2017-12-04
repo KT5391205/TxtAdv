@@ -1,10 +1,3 @@
-
-/**
- * Write a description of class CharacterClass here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 public class CharacterClass
 {
     private String name;

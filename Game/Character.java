@@ -51,9 +51,20 @@ public abstract class Character
         }
     }
     
-    public void initialize()
+    public void hpInit()
     {
-        //MaxHp =
+        int charHd = cList.getCharacterClass(charClass).getHd();
+        maxHp = (int)(charHd + (level - 1) * (charHd / 2 + 1));
+    }
+    
+    public void gainXp(int x)
+    {
+        xp = xp + x;
+        
+        while(level < xp / 300)
+        {
+            level++;
+        }
     }
     
     //Getters and Setters

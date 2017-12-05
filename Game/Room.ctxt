@@ -1,3 +1,20 @@
 #BlueJ class context
 comment0.target=Room
-numComments=1
+comment1.params=
+comment1.target=Room()
+comment2.params=
+comment2.target=int\ getId()
+comment2.text=\r\n\ ID\r\n
+comment3.params=i
+comment3.target=void\ setId(int)
+comment4.params=
+comment4.target=boolean\ getEnemies()
+comment4.text=\r\n\ Enemies\r\n
+comment5.params=e
+comment5.target=void\ setEnemies(boolean)
+comment6.params=
+comment6.target=boolean\ getLoot()
+comment6.text=\r\n\ Loot\r\n
+comment7.params=l
+comment7.target=void\ setLoot(boolean)
+numComments=8

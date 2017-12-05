@@ -5,3 +5,4 @@ Item ID's are arranged by item type.
  - Armor ID's will begin with 2.
  - Item ID's will begin with 3.
  - Character Class ID's will begin with 4.
+ - Room ID's will begin with 5.

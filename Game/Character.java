@@ -15,6 +15,7 @@ public abstract class Character
     protected int maxHp;
     protected int currentHp;
     protected int atkStat;
+    protected int room;
 
     ClassList cList = new ClassList();
     WeaponList wList = new WeaponList();
@@ -222,6 +223,18 @@ public abstract class Character
     public int getCurrentHp()
     {
         return currentHp;
+    }
+    
+    /**
+     * Room
+     */
+    public int getRoom()
+    {
+        return room;
+    }
+    public void setRoom(int r)
+    {
+        room = r;
     }
     
     public int mod(int i)

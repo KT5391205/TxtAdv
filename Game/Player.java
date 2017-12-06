@@ -4,7 +4,7 @@ public class Player extends Character
     {
     }
     
-    public Player(String n, int cc, int l, int s, int d, int f, int i, int w, int c, int wep, int arm)
+    public Player(String n, int cc, int l, int s, int d, int f, int i, int w, int c, int we, int ar, int mHp)
     {
         name = n;
         charClass = cc;
@@ -15,7 +15,8 @@ public class Player extends Character
         intel = i;
         wis = w;
         cha = c;
-        wep = this.wep;
-        arm = this.arm;
+        wep = we;
+        arm = ar;
+        maxHp = mHp;
     }
 }

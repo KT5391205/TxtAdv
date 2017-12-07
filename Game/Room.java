@@ -1,7 +1,7 @@
 public class Room
 {
     private int id;
-    private boolean enemies;
+    private int events;
     private boolean loot;
     
     public Room()
@@ -24,13 +24,13 @@ public class Room
     /**
      * Enemies
      */
-    public boolean getEnemies()
+    public int getEvents()
     {
-        return enemies;
+        return events;
     }
-    public void setEnemies(boolean e)
+    public void setEvents(int e)
     {
-        enemies = e;
+        events = e;
     }
     
     /**

@@ -6,3 +6,4 @@ Item ID's are arranged by item type.
  - Item ID's will begin with 3.
  - Character Class ID's will begin with 4.
  - Room ID's will begin with 5.
+ - Event ID's will being with 6.

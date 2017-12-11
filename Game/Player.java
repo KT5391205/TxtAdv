@@ -9,12 +9,6 @@ public class Player extends Character
         name = n;
         charClass = cc;
         level = l;
-        str = s;
-        dex = d;
-        con = f;
-        intel = i;
-        wis = w;
-        cha = c;
         wep = we;
         arm = ar;
         maxHp = mHp;

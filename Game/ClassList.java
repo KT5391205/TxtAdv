@@ -6,6 +6,13 @@ public class ClassList
     
     public ClassList()
     {
+        //Deprived
+        CharacterClass Deprived = new CharacterClass();
+        Deprived.setName("deprived");
+        Deprived.setId(4000);
+        Deprived.setSkills(-1, -1, -1, -1);
+        classMap.put(Deprived.getId(), Deprived);
+        
         //Barbarian
         CharacterClass Barbarian = new CharacterClass();
         Barbarian.setName("barbarian");

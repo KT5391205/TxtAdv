@@ -4,12 +4,7 @@ public abstract class Character
     protected int charClass;
     protected int level;
     protected int xp;
-    protected int str;
-    protected int dex;
-    protected int con;
-    protected int intel;
-    protected int wis;
-    protected int cha;
+    protected int[] abilities;
     protected int wep;
     protected int arm;
     protected int maxHp;
@@ -42,13 +37,13 @@ public abstract class Character
     
     public int getAtkStat()
     {
-        if(wList.getWeapon(wep).getFinesse() == true && dex > str)
+        if(wList.getWeapon(wep).getFinesse() == true && abilities[1] > abilities[0])
         {
-            return dex;
+            return abilities[1];
         }
         else
         {
-            return str;
+            return abilities[0];
         }
     }
     
@@ -115,78 +110,6 @@ public abstract class Character
     public void setXp(int x)
     {
         xp = x;
-    }
-
-    /**
-     * Strength
-     */
-    public int getStr()
-    {
-        return str;
-    }
-    public void setStr(int s)
-    {
-        str = s;
-    }
-
-    /**
-     * Dexterity
-     */
-    public int getDex()
-    {
-        return dex;
-    }
-    public void setDex(int d)
-    {
-        dex = d;
-    }
-
-    /**
-     * Constitution
-     */
-    public int getCon()
-    {
-        return con;
-    }
-    public void setCon(int f)
-    {
-        con = f;
-    }
-
-    /**
-     * Intelligence
-     */
-    public int getIntel()
-    {
-        return intel;
-    }
-    public void setIntel(int i)
-    {
-        intel = i;
-    }
-
-    /**
-     * Wisdom
-     */
-    public int getWis()
-    {
-        return wis;
-    }
-    public void setWis(int w)
-    {
-        wis = w;
-    }
-
-    /**
-     * Charisma
-     */
-    public int getCha()
-    {
-        return cha;
-    }
-    public void setCha(int c)
-    {
-        cha = c;
     }
     
     /**

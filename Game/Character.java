@@ -5,6 +5,7 @@ public abstract class Character
     protected int level;
     protected int xp;
     protected int[] abilities;
+    protected int[] skills;
     protected int wep;
     protected int arm;
     protected int maxHp;
@@ -63,6 +64,12 @@ public abstract class Character
         }
     }
     
+    public int mod(int i)
+    {
+        int mod = (int)(i / 2 - 5);
+        return mod;
+    }
+    
     //Getters and Setters
     /**
      * Name
@@ -113,6 +120,30 @@ public abstract class Character
     }
     
     /**
+     * Ability Scores
+     */
+    public int getAbl(int i)
+    {
+        return abilities[i];
+    }
+    public void setAbl(int i, int n)
+    {
+        abilities[i] = n;
+    }
+    
+    /**
+     * Skills
+     */
+    public int getSkills(int i)
+    {
+        return skills[i];
+    }
+    public void setSkills(int i, int n)
+    {
+        skills[i] = n;
+    }
+    
+    /**
      * Weapon
      */
     public int getWep()
@@ -158,11 +189,5 @@ public abstract class Character
     public void setRoom(int r)
     {
         room = r;
-    }
-    
-    public int mod(int i)
-    {
-        int mod = (int)(i / 2 - 5);
-        return mod;
     }
 }

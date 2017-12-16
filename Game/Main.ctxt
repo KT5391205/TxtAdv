@@ -1,9 +1,5 @@
 #BlueJ class context
 comment0.target=Main
 comment1.params=
-comment1.target=void\ chooseName()
-comment2.params=
-comment2.target=void\ chooseClass()
-comment3.params=
-comment3.target=void\ main()
-numComments=4
+comment1.target=void\ characterCreate()
+numComments=2

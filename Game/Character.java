@@ -4,7 +4,7 @@ public abstract class Character
     protected int charClass;
     protected int level;
     protected int xp;
-    protected int[] abilities;
+    protected int[][] abilityArray = new int[6][2];
     protected int wep;
     protected int arm;
     protected int maxHp;
@@ -37,13 +37,13 @@ public abstract class Character
     
     public int getAtkStat()
     {
-        if(wList.getWeapon(wep).getFinesse() == true && abilities[1] > abilities[0])
+        if(wList.getWeapon(wep).getFinesse() == true && abilityArray[0][1] > abilityArray[0][0])
         {
-            return abilities[1];
+            return abilityArray[1][0];
         }
         else
         {
-            return abilities[0];
+            return abilityArray[0][0];
         }
     }
     
@@ -61,6 +61,12 @@ public abstract class Character
         {
             level++;
         }
+    }
+    
+    public int mod(int i)
+    {
+        int mod = (int)(i / 2 - 5);
+        return mod;
     }
     
     //Getters and Setters
@@ -113,6 +119,18 @@ public abstract class Character
     }
     
     /**
+     * Ability Scores
+     */
+    public int getAbl(int i)
+    {
+        return abilityArray[0][i];
+    }
+    public void setAbl(int i, int n)
+    {
+        abilityArray[0][i] = n;
+    }
+    
+    /**
      * Weapon
      */
     public int getWep()
@@ -158,11 +176,5 @@ public abstract class Character
     public void setRoom(int r)
     {
         room = r;
-    }
-    
-    public int mod(int i)
-    {
-        int mod = (int)(i / 2 - 5);
-        return mod;
     }
 }

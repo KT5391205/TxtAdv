@@ -2,4 +2,6 @@
 comment0.target=Roller
 comment1.params=q\ n
 comment1.target=int\ roll(int,\ int)
-numComments=2
+comment2.params=q
+comment2.target=int\ rollPool(int)
+numComments=3

@@ -2,4 +2,5 @@
 comment0.target=Dialogue
 comment1.params=
 comment1.target=void\ test()
+comment1.text=\r\n\ Test\ Method\r\n
 numComments=2

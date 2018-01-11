@@ -2,10 +2,12 @@
 comment0.target=Event
 comment1.params=
 comment1.target=java.lang.String\ getName()
+comment1.text=\r\n\ Name\r\n
 comment2.params=n
 comment2.target=void\ setName(java.lang.String)
 comment3.params=
 comment3.target=int\ getId()
+comment3.text=\r\n\ ID\r\n
 comment4.params=i
 comment4.target=void\ setId(int)
 numComments=5

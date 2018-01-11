@@ -3,6 +3,10 @@ public abstract class Event
     protected String name;
     protected int id;
     
+    //Getters and Setters
+    /**
+     * Name
+     */
     public String getName()
     {
         return name;
@@ -12,6 +16,9 @@ public abstract class Event
         name = n;
     }
     
+    /**
+     * ID
+     */
     public int getId()
     {
         return id;

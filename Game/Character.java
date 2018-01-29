@@ -4,7 +4,12 @@ public abstract class Character
     protected int charClass;
     protected int level;
     protected int xp;
-    protected int[][] abilityArray = new int[6][2];
+    protected int str;
+    protected int dex;
+    protected int con;
+    protected int intel;
+    protected int wis;
+    protected int cha;
     protected int wep;
     protected int arm;
     protected int maxHp;
@@ -12,7 +17,6 @@ public abstract class Character
     protected int atkStat;
     protected int room;
 
-    ClassList cList = new ClassList();
     WeaponList wList = new WeaponList();
     Roller dice = new Roller();
 
@@ -37,20 +41,14 @@ public abstract class Character
     
     public int getAtkStat()
     {
-        if(wList.getWeapon(wep).getFinesse() == true && abilityArray[0][1] > abilityArray[0][0])
+        if(wList.getWeapon(wep).getFinesse() == true && dex > str)
         {
-            return abilityArray[1][0];
+            return dex;
         }
         else
         {
-            return abilityArray[0][0];
+            return str;
         }
-    }
-    
-    public void hpInit()
-    {
-        int charHd = cList.getCharacterClass(charClass).getHd();
-        maxHp = (int)(charHd + (level - 1) * (charHd / 2 + 1));
     }
     
     public void gainXp(int x)
@@ -83,18 +81,6 @@ public abstract class Character
     }
 
     /**
-     * Class
-     */
-    public CharacterClass getCharClass()
-    {
-        return cList.getCharacterClass(charClass);
-    }
-    public void setCharClass(int c)
-    {
-        charClass = c;
-    }
-
-    /**
      * Level
      */
     public int getLevel()
@@ -121,13 +107,53 @@ public abstract class Character
     /**
      * Ability Scores
      */
-    public int getAbl(int i)
+    public int getStr()
     {
-        return abilityArray[0][i];
+        return str;
     }
-    public void setAbl(int i, int n)
+    public void setStr(int s)
     {
-        abilityArray[0][i] = n;
+        str = s;
+    }
+    public int getDex()
+    {
+        return dex;
+    }
+    public void setDex(int d)
+    {
+        dex = d;
+    }
+    public int getCon()
+    {
+        return con;
+    }
+    public void setCon(int f)
+    {
+        con = f;
+    }
+    public int getIntel()
+    {
+        return intel;
+    }
+    public void setIntel(int i)
+    {
+        intel = i;
+    }
+    public int getWis()
+    {
+        return wis;
+    }
+    public void setWis(int w)
+    {
+        wis = w;
+    }
+    public int getCha()
+    {
+        return cha;
+    }
+    public void setCha(int c)
+    {
+        cha = c;
     }
     
     /**

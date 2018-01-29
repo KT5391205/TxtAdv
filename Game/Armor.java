@@ -2,6 +2,7 @@ public class Armor extends Items
 {
     private int ac;
     private String type;
+    private int minStr;
     
     public Armor()
     {
@@ -18,6 +19,11 @@ public class Armor extends Items
         return type;
     }
     
+    public int getMinStr()
+    {
+        return minStr;
+    }
+    
     //Mutator Methods
     public void setAc(int a)
     {
@@ -27,5 +33,10 @@ public class Armor extends Items
     public void setType(String t)
     {
         type = t;
+    }
+    
+    public void setMinStr(int s)
+    {
+        minStr = s;
     }
 }

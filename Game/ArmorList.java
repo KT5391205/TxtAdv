@@ -33,6 +33,7 @@ public class ArmorList
         Plate.setId(2003);
         Plate.setAc(18);
         Plate.setType("heavy");
+        Plate.setMinStr(14);
         armormap.put(Plate.getId(), Plate);
         
         //Buckler - 2004

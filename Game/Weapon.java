@@ -3,7 +3,7 @@ public class Weapon extends Items
     private int minDamage;
     private int maxDamage;
     private String damType;
-    private int hands;
+    private int minStr;
     private boolean finesse;
     
     public Weapon()
@@ -35,6 +35,11 @@ public class Weapon extends Items
         return finesse;
     }
     
+    public int getMinStr()
+    {
+        return minStr;
+    }
+    
     //Mutator Methods
     public void setDamage(int min, int max)
     {   minDamage = min;
@@ -44,5 +49,10 @@ public class Weapon extends Items
     public void setDamType(String d)
     {
         damType = d;
+    }
+    
+    public void setMinStr(int s)
+    {
+        minStr = s;
     }
 }

@@ -9,12 +9,12 @@ public class WeaponList
         //Dagger - 1001
         Weapon Dagger = new Weapon();
         Dagger.setName("dagger");
-        Dagger.setDesc("a short, double-edged blade made for piercing. It can be thrown");
+        Dagger.setDesc("a short, double-edged blade made for piercing");
         Dagger.setValue(10);
         Dagger.setId(1001);
         Dagger.setDamage(1, 4);
         Dagger.setDamType("piercing");
-        Dagger.setHands(1);
+        Dagger.setMinStr(-1);
         weaponMap.put(Dagger.id, Dagger);
         
         //Mace - 1002
@@ -25,7 +25,7 @@ public class WeaponList
         Mace.setId(1002);
         Mace.setDamage(1, 6);
         Mace.setDamType("bludgeoning");
-        Mace.setHands(1);
+        Mace.setMinStr(8);
         weaponMap.put(Mace.id, Mace);
         
         //Longsword - 1003
@@ -36,7 +36,7 @@ public class WeaponList
         Longsword.setId(1003);
         Longsword.setDamage(1, 8);
         Longsword.setDamType("slashing");
-        Longsword.setHands(1);
+        Longsword.setMinStr(10);
         weaponMap.put(Longsword.id, Longsword);
         
         //Stick - 1004
@@ -47,19 +47,19 @@ public class WeaponList
         Stick.setId(1004);
         Stick.setDamage(1, 1);
         Stick.setDamType("bludgeoning");
-        Stick.setHands(2);
+        Stick.setMinStr(-1);
         weaponMap.put(Stick.id, Stick);
         
-        //Stick - 1005
-        Weapon Longersword = new Weapon();
-        Longersword.setName("longersword");
-        Longersword.setDesc("a LARGER blade meant to be used with three hands");
-        Longersword.setValue(300);
-        Longersword.setId(1005);
-        Longersword.setDamage(3, 18);
-        Longersword.setDamType("slashing");
-        Longersword.setHands(3);
-        weaponMap.put(Longersword.id, Longersword);
+        //Dragon Slayer - 1005
+        Weapon DragonSlayer = new Weapon();
+        DragonSlayer.setName("Dragon Slayer");
+        DragonSlayer.setDesc("an oversized sword wielded by a hero after a great eclipse");
+        DragonSlayer.setValue(-1);
+        DragonSlayer.setId(1005);
+        DragonSlayer.setDamage(4, 24);
+        DragonSlayer.setDamType("slashing");
+        DragonSlayer.setMinStr(18);
+        weaponMap.put(DragonSlayer.id, DragonSlayer);
     }
     
     public Weapon getWeapon(int i)
